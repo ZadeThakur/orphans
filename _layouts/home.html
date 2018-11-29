@@ -4,114 +4,116 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="assets/home.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
 
-    {%for file in site.static_files%}
-      {%if file.extname == ".jpg" %}
-      {%if file.name == "image1.jpg" %}
-        <div class="object one">
-          <nav class="navbar navbar-expand-lg  navbar-dark bg-transparent">
-            <a class="navbar-brand" href="#">Orphans</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Donate<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Volunteer</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact us</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <div class="heading1Div">
-            <span class="heading1DivSpan">
-              <h1 id="heading1">CARING FOR OPRHANS</h1>
-              <h1 id="heading2">#TheyAllShouldHaveHome</h1>
-              <a href="#" class="transparent_btn">Become a empowerment partner with $10 Montly</a>
-              <a href="#" class="transparent_btn">Donate</a>
-            </span>
-          </div>
+     {%for file in site.static_files%}
+       {%if file.extname == ".jpg" %}
+       {%if file.name == "image1.jpg" %}
+         <div class="object one">
+           <nav class="navbar navbar-expand-lg  navbar-dark bg-transparent">
+             <a class="navbar-brand" href="#">Orphans</a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarNavDropdown">
+               <ul class="navbar-nav ml-auto">
+                 <li class="nav-item active">
+                   <a class="nav-link" href="#">Donate<span class="sr-only">(current)</span></a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Volunteer</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Contact us</a>
+                 </li>
+               </ul>
+             </div>
+           </nav>
+           <div class="heading1Div">
+             <span class="heading1DivSpan">
+               <h1 id="heading1">CARING FOR OPRHANS</h1>
+               <h1 id="heading2">#TheyAllShouldHaveHome</h1>
+               <a href="#" class="transparent_btn">Become a empowerment partner with $10 Montly</a>
+               <a href="#" class="transparent_btn">Donate</a>
+             </span>
+           </div>
 
-        </div>
+         </div>
 
-      {%endif%}
-      {%if file.name == "image2.jpg" %}
-      <div class="object two">
-        <div class="heading1Div">
-          <span class="heading1DivSpan" >
-            <div id="heading1">
-              <h1>Empowerment Partners</h1>
-            </div>
-            <div id="heading2">
-              <h2>Our Empowerment Partners join us with as little as $10 monthly and make it possible for us to invest in
-                the best possible orphan care. What is the best care for orphans? We're glad you asked!</h2>
-            </div>
-          </span>
-        </div>
-      </div>
-      <div class="container">
-        <div class="small">
-          <div class="small Div">
-            {{content}}
-          </div>
-          <div class="small DivVideoPlayer">
-            <iframe id="videoPlayer" width="100%" height="250" src="https://www.youtube.com/embed/u2d8veNQBiY"
-             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
+       {%endif%}
+       {%if file.name == "image2.jpg" %}
+       <div class="object two">
+         <div class="heading1Div">
+           <span class="heading1DivSpan" >
+             <div id="heading1">
+               <h1>Empowerment Partners</h1>
+             </div>
+             <div id="heading2">
+               <h2>Our Empowerment Partners join us with as little as $10 monthly and make it possible for us to invest in
+                 the best possible orphan care. What is the best care for orphans? We're glad you asked!</h2>
+             </div>
+           </span>
+         </div>
+       </div>
+       <div class="container">
+         <div class="small">
+           <div class="small Div">
+             {{content}}
+           </div>
+           <div class="small DivVideoPlayer">
+             <iframe id="videoPlayer" width="100%" height="250" src="https://www.youtube.com/embed/u2d8veNQBiY"
+              frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+           </div>
+         </div>
+       </div>
 
 
 
-      {%endif%}
-      {%if file.name == "image3.jpg" %}
-        <div class="object three">
-          <div class="heading1Div">
-            <span class="heading1DivSpan">
-              <h1 id="heading1">We're In this together</h1>
-              <h1 id="heading2">Become an Empowerment Partner, joining us monthly
-                 in empowering families to care for orphaned and vulnerable children.</h1>
-              <a href="#" class="transparent_btn">Become a $10 empowerment partner</a>
-            </span>
-          </div>
-        </div>
+       {%endif%}
+       {%if file.name == "image3.jpg" %}
+         <div class="object three">
+           <div class="heading1Div">
+             <span class="heading1DivSpan">
+               <h1 id="heading1">We're In this together</h1>
+               <h1 id="heading2">Become an Empowerment Partner, joining us monthly
+                  in empowering families to care for orphaned and vulnerable children.</h1>
+               <a href="#" class="transparent_btn">Become a $10 empowerment partner</a>
+             </span>
+           </div>
+         </div>
 
-      {%endif%}
-      {%endif%}
-    {% endfor %}
-    <div class="lastDiv">
-      <div class="heading1Div last">
-        <span class="heading1DivSpan last">
-          <h3>Address</h3>
-          <h3>1.888.ORPHANS (677.4267) - P.O. Box 1840 Castle Rock, CO 80104</h3>
-          <a class="btn btn-social-icon btn-twitter" href="https://www.twitter.com">
-    			<span id="socialLink" class="fa fa-twitter"></span>
-  			   </a>
-           <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com">
-    			<span id="socialLink" class="fa fa-facebook"></span>
-  			</a>
-  			<a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com">
-    			<span id="socialLink" class="fa fa-instagram"></span>
-  			</a>
-  			<a class="btn btn-social-icon btn-github" href="https://www.github.com">
-    			<span id="socialLink" class="fa fa-github"></span>
-  			</a>
-        </span>
-      </div>
-    </div>
+       {%endif%}
+       {%endif%}
+     {% endfor %}
+     <div class="lastDiv">
+       <div class="heading1Div last">
+         <span class="heading1DivSpan last">
+           <h3>Address</h3>
+           <h3>1.888.ORPHANS (677.4267) - P.O. Box 1840 Castle Rock, CO 80104</h3>
+           <a class="btn btn-social-icon btn-twitter" href="https://www.twitter.com">
+     			<span id="socialLink" class="fa fa-twitter"></span>
+   			   </a>
+            <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com">
+     			<span id="socialLink" class="fa fa-facebook"></span>
+   			</a>
+   			<a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com">
+     			<span id="socialLink" class="fa fa-instagram"></span>
+   			</a>
+   			<a class="btn btn-social-icon btn-github" href="https://www.github.com">
+     			<span id="socialLink" class="fa fa-github"></span>
+   			</a>
+         </span>
+       </div>
+     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
   </body>
 </html>
