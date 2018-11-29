@@ -1,24 +1,23 @@
-html,body{
-  height:100%;
-  width:100%;
-  padding:0;
-  margin:0;
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
   font-family: proxima nova;
   background-color: #97bcbe;
 }
 
-.object{
-  height:100%;
-  width:100%;
+.object {
+  height: 100%;
+  width: 100%;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.heading1Div{
+.heading1Div {
   height: 690px;
   line-height: 690px;
   text-align: center;
-
 }
 .heading1DivSpan{
   color: white;
@@ -27,73 +26,78 @@ html,body{
   line-height: normal;
   width: 60%;
 }
-#heading1{
-  padding:10px 10px 0px 10px;
+#heading1 {
+  padding: 10px 10px 0px 10px;
 }
-#heading2{
-  padding:10px 10px 10px 15px;
+
+#heading2 {
+  padding: 10px 10px 10px 15px;
 }
-.transparent_btn{
-  display:inline-block;
-  font-size:25px;
+
+.transparent_btn {
+  display: inline-block;
+  font-size: 25px;
   line-height: 120%;
   color: #FFF;
   background-color: transparent;
   border: 1px solid #FFF;
-  padding:10px 25px;
+  padding: 10px 25px;
   border-radius: 4px;
   text-decoration: none;
   cursor: pointer;
   transition: background-color ease 400ms;
 }
-.transparent_btn:hover{
+.transparent_btn:hover {
   color: #fff;
   background-color: rgba(255,255,255,0.3);
 }
-.one{
-  background-image: url(image1.jpg);
 
+.one {
+  background-image: url(image1.jpg);
 }
-.two{
+.two {
   background-image: url(image2.jpg);
 }
-.container{
+
+.container {
   height: 50%;
 }
-.small{
+.small {
   float: left;
 }
-.small.Div{
+.small.Div {
   color: white;
   font-size: 17px;
   width: 70%;
   padding: 4% 1px;
 }
-.small.DivVideoPlayer{
+.small.DivVideoPlayer {
   width: 30%;
   padding: 4% 1px;
 }
 
-.three{
+.three {
   background-image: url(image3.jpg);
   height: 100%;
 }
-.lastDiv{
+
+.lastDiv {
   width: 100%;
   background-color: white;
 }
-.heading1Div.last{
+.heading1Div.last {
   height: 200px;
-  line-height:200px;
+  line-height: 200px;
   text-align: center;
 }
-.heading1DivSpan.last{
+.heading1DivSpan.last {
   color: BLACK;
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
   width: 60%;
 }
-#socialLink{
+
+#socialLink {
   color: black;
 }
