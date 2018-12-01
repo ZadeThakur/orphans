@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <link rel="stylesheet" href="assets/home.css">
+     <link rel="stylesheet" href="assets/volunteer.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+    {% for file in site.static_files %}
+      {%if file.path contains 'assets/volunteer_images' %}
+
+        {%if file.name == "image1.jpg" %}
+          <div class="object one">
+            {% include navbar.html %}
+            <div class="heading1Div">
+              <span class="heading1DivSpan">
+                <h1 id="heading1">GET INVOLVED</h1>
+                <h1 id="heading2">Join us to advocate on behalf of orphaned and vulnerable children</h1>
+              </span>
+            </div>
+          </div>
+        {%endif%}
+
+        {%if file.name == "image2.jpg" %}
+        <div class="object two">
+          <div class="heading1Div">
+            <span class="heading1DivSpan" >
+              <div id="heading1">
+                <h1>Create a Campaign</h1>
+              </div>
+              <div id="heading2">
+                <h2>Every $50 you raise helps support a child for one month.</h2>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div class="container">
+          {{content}}
+        </div>
+        {%endif%}
+        {%if file.name == "image3.jpg" %}
+          <div class="object three">
+            <div class="heading1Div">
+              <span class="heading1DivSpan">
+                <h1 id="heading1">Volunteer</h1>
+                <h1 id="heading2">Serve alongside the World Orphans staff.</h1>
+                <a href="#" class="transparent_btn">Volunteer!</a>
+              </span>
+            </div>
+          </div>
+        {%endif%}
+      {% endif %}
+    {% endfor %}
+    {% include footer.html %}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ </body>
+ </html>

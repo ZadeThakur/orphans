@@ -11,28 +11,10 @@
   <body>
 
      {%for file in site.static_files%}
-       {%if file.extname == ".jpg" %}
+       {% if file.path contains 'assets/home_images' %}
        {%if file.name == "image1.jpg" %}
          <div class="object one">
-           <nav class="navbar navbar-expand-lg  navbar-dark bg-transparent">
-             <a class="navbar-brand" href="#">Orphans</a>
-             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-             </button>
-             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-               <ul class="navbar-nav ml-auto">
-                 <li class="nav-item active">
-                   <a class="nav-link" href="#">Donate<span class="sr-only">(current)</span></a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="#">Volunteer</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="#">Contact us</a>
-                 </li>
-               </ul>
-             </div>
-           </nav>
+           {% include navbar.html %}
            <div class="heading1Div">
              <span class="heading1DivSpan">
                <h1 id="heading1">CARING FOR OPRHANS</h1>
@@ -89,26 +71,8 @@
        {%endif%}
        {%endif%}
      {% endfor %}
-     <div class="lastDiv">
-       <div class="heading1Div last">
-         <span class="heading1DivSpan last">
-           <h3>Address</h3>
-           <h3>1.888.ORPHANS (677.4267) - P.O. Box 1840 Castle Rock, CO 80104</h3>
-           <a class="btn btn-social-icon btn-twitter" href="https://www.twitter.com">
-     			<span id="socialLink" class="fa fa-twitter"></span>
-   			   </a>
-            <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com">
-     			<span id="socialLink" class="fa fa-facebook"></span>
-   			</a>
-   			<a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com">
-     			<span id="socialLink" class="fa fa-instagram"></span>
-   			</a>
-   			<a class="btn btn-social-icon btn-github" href="https://www.github.com">
-     			<span id="socialLink" class="fa fa-github"></span>
-   			</a>
-         </span>
-       </div>
-     </div>
+
+     {% include footer.html %}
 
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

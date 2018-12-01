@@ -1,0 +1,73 @@
+.one{
+  background-image: url(volunteer_images/image1.jpg);
+}
+.two{
+  background-image: url(volunteer_images/image2.jpg);
+}
+.three{
+  background-image: url(volunteer_images/image3.jpg);
+  height: 100%;
+}
+.heading1DivSpan{
+  color: Black;
+}
+.heading1DivSpan.last{
+  color: BLACK;
+}
+
+.transparent_btn{
+  color: Black;
+  border: 1px solid Black;
+}
+.transparent_btn:hover{
+  color: Black;
+  background-color: rgba(255,255,255,0.3);
+}
+
+.image_links{
+  float:left;
+  width: 100%;
+  padding-top: 3%
+}
+.image_links.first{
+  width: 25%;
+  padding-left: 1%;
+}
+.image_links.second{
+  width: 25%;
+  padding-left: 1%;
+}
+.image_links.third{
+  width: 25%;
+  padding-left: 1%;
+}
+.image_links.fourth{
+  width: 25%;
+  padding-left: 1%;
+}
+#image_links_buttons{
+  margin-top: 3%;
+  background-color: #eee;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+
+}
+#image_links_buttons:hover{
+  color: black;
+  background-color: rgba(255,255,255,0.3);
+}
+.container{
+  height:100%;
+}
+#button1_text{
+  text-align: center;
+}
+#small{
+  color: white;
+  font-size: 17px;
+  padding: 4% 1px;
+}
+#headings_text{
+  text-align: center;
+}
