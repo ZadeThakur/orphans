@@ -1,0 +1,51 @@
+html,body{
+  height:100%;
+  width:100%;
+  padding:0;
+  margin:0;
+  font-family: proxima nova;
+  background-color: #97bcbe;
+}
+.object{
+  height:100%;
+  width:100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.one{
+  background-image: url(donate/image1.jpg);
+
+}
+
+#form {
+    right: 0;
+    margin: 1px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+}
+
+.bg-img {
+  min-height: 520px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
