@@ -16,7 +16,7 @@ html,body{
 
 .heading1Div{
   height: 690px;
-  line-height: 690px;
+  line-height: 700px;
   text-align: center;
 
 }
@@ -49,6 +49,7 @@ html,body{
 .transparent_btn:hover{
   color: #fff;
   background-color: rgba(255,255,255,0.3);
+  text-decoration: none;
 }
 .one{
   background-image: url(home_images/image1.jpg);
@@ -61,16 +62,20 @@ html,body{
 }
 .small{
   float: left;
+  padding-top: 3%;
 }
 .small.Div{
   color: white;
   font-size: 17px;
   width: 70%;
-  padding: 4% 1px;
+  padding-right: 3%
+
+
 }
 .small.DivVideoPlayer{
   width: 30%;
-  padding: 4% 1px;
+  padding-left: 3%;
+
 }
 
 .three{
@@ -79,11 +84,12 @@ html,body{
 }
 .lastDiv{
   width: 100%;
-  background-color: white;
+  height: 50%;
+
 }
 .heading1Div.last{
   height: 200px;
-  line-height:200px;
+  line-height:400px;
   text-align: center;
 }
 .heading1DivSpan.last{
@@ -95,4 +101,17 @@ html,body{
 }
 #socialLink{
   color: black;
+}
+#socialLink:hover{
+  color: white;
+}
+.added_obj_two{
+  height: 40%;
+  color:white;
+  margin: 2.5%;
+
+}
+.added_obj_two h1{
+  text-align: center;
+  padding-top: 5px;
 }

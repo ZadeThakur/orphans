@@ -48,6 +48,10 @@ html,body{
 .transparent_btn:hover{
   color: #fff;
   background-color: rgba(255,255,255,0.3);
+  text-decoration: none;
+}
+.articles a{
+  text-decoration: none;
 }
 #imageLink{
   padding-bottom: 3%;
@@ -84,11 +88,12 @@ html,body{
 }
 .lastDiv{
   width: 100%;
-  background-color: white;
+  height: 50%;
+
 }
 .heading1Div.last{
   height: 200px;
-  line-height:200px;
+  line-height:400px;
   text-align: center;
 }
 .heading1DivSpan.last{
