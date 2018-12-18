@@ -106,6 +106,9 @@ html,body{
 #socialLink{
   color: black;
 }
+#socialLink:hover{
+  color: white;
+}
 .container{
   height: 70%;
 }
