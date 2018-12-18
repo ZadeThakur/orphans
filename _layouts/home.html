@@ -10,6 +10,7 @@
   </head>
   <body>
 
+
      {%for file in site.static_files%}
        {% if file.path contains 'assets/home_images' %}
        {%if file.name == "image1.jpg" %}
@@ -19,10 +20,26 @@
              <span class="heading1DivSpan">
                <h1 id="heading1">CARING FOR OPRHANS</h1>
                <h1 id="heading2">#TheyAllShouldHaveHome</h1>
-               <a href="https://zadethakur.github.io/orphans/donate.html" class="transparent_btn">Become a empowerment partner with $10 Montly</a>
-               <a href="https://zadethakur.github.io/orphans/donate.html" class="transparent_btn">Donate</a>
+               <a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="transparent_btn">Become a empowerment partner with $10 Montly</a>
+               <a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="transparent_btn">Donate</a>
              </span>
            </div>
+         </div>
+         <div class="added_obj_two">
+           <h1>Empowerment Partners</h1>
+           <br>
+           <h3>Our Empowerment Partners join us with as little as $10 monthly and make it possible for us to invest in
+             the best possible orphan care. What is the best care for orphans? We're glad you asked!</h3>
+
+             <ul>
+               <li>Total estimated number of orphans worldwide:<strong>150 Million</strong></li>
+               <li>Estimated number that have lost only their mother: <strong>34.5 Million</strong></li>
+               <li>Estimated number that have lost only their father:<strong>101 Million</strong></li>
+               <li>Estimated number of double orphans:<strong>17.6 million</strong></li>
+               <li>Estimated number of children on streets or in residential care:<strong>2-8 Million</strong></li>
+             </ul>
+
+
 
          </div>
 
@@ -32,11 +49,10 @@
          <div class="heading1Div">
            <span class="heading1DivSpan" >
              <div id="heading1">
-               <h1>Empowerment Partners</h1>
+               <h1>WE BELIEVE IN GOD'S DESIGN</h1>
              </div>
              <div id="heading2">
-               <h2>Our Empowerment Partners join us with as little as $10 monthly and make it possible for us to invest in
-                 the best possible orphan care. What is the best care for orphans? We're glad you asked!</h2>
+               <h2>Children belong in families.</h2>
              </div>
            </span>
          </div>
@@ -44,6 +60,7 @@
        <div class="container">
          <div class="small">
            <div class="small Div">
+             <br>
              {{content}}
            </div>
            <div class="small DivVideoPlayer">
@@ -63,7 +80,7 @@
                <h1 id="heading1">We're In this together</h1>
                <h1 id="heading2">Become an Empowerment Partner, joining us monthly
                   in empowering families to care for orphaned and vulnerable children.</h1>
-               <a href="https://zadethakur.github.io/orphans/donate.html" class="transparent_btn">Become a $10 empowerment partner</a>
+               <a href="#" data-toggle="modal" data-target="#exampleModalCenter"class="transparent_btn">Become a $10 empowerment partner</a>
              </span>
            </div>
          </div>
